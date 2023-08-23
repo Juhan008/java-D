@@ -1,7 +1,4 @@
-# java-D
-master4
-
-package weekendTesk2;
+package homework2;
 
 
 
