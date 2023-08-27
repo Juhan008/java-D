@@ -1,4 +1,4 @@
-package loltrade;
+package Loltrade;
 
 import java.util.Scanner;
 

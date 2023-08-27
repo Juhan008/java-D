@@ -1,4 +1,4 @@
-package loltrade;
+package Loltrade;
 //어떤 클래스를만들까?
 //마켓 내 선수들 집단
 //스테이지 팀 난이도

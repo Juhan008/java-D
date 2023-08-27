@@ -1,4 +1,4 @@
-package loltrade;
+package Loltrade;
 
 public class menu {
 	public int going = 0;

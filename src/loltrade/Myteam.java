@@ -1,4 +1,4 @@
-package loltrade;
+package Loltrade;
 
  class Myteam extends CharacterAbility{
 	 public Myteam(String name, int ability, int cooperation, int operate, int hp, int position) {
