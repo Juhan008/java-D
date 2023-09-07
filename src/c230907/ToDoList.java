@@ -6,8 +6,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class ToDoList {
-//투두 리스트 만들기
-	//셋으로 입력 , 맵으로 찾아서 출력하자 우선순위는 뭘로 만드는게 좋을까아? 나두 몰랑 케케
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Scanner title = new Scanner(System.in);
