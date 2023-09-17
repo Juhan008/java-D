@@ -1,7 +1,7 @@
-package characterMangemaet;
+package characterMangement;
 
 
-public class CharaterRegulation<R,P,T,N,G,O,TB,S,E,TP,H> {
+public class CharaterRegulation<R,P,T,N,G,O,TB,S,E,TP,TS> {
 
 	private R linerRating;
 	private P position;
@@ -13,7 +13,7 @@ public class CharaterRegulation<R,P,T,N,G,O,TB,S,E,TP,H> {
 	private S superPlay;
 	private E equippedOrNot;
 	private TP transferPrice;
-	private H havingOrNot;
+	private TS transferStatus;
 	
 	public CharaterRegulation(R linerRating,
 							 P position, 
@@ -25,7 +25,7 @@ public class CharaterRegulation<R,P,T,N,G,O,TB,S,E,TP,H> {
 			 				 S superPlay,
 			 				 E equippedOrNot,
 			 				 TP transferPrice,
-			 				 H havingOrNot
+			 				 TS transferStatus
 			 				 ) {
 			this.linerRating = linerRating;
 			this.position = position;
@@ -37,7 +37,7 @@ public class CharaterRegulation<R,P,T,N,G,O,TB,S,E,TP,H> {
 	        this.superPlay = superPlay;
 	        this.equippedOrNot = equippedOrNot;
 	        this.transferPrice = transferPrice;
-	        this.havingOrNot = havingOrNot;
+	        this.transferStatus = transferStatus;
 	}
 	public R getLinerRating() {
         return linerRating;
@@ -99,10 +99,10 @@ public class CharaterRegulation<R,P,T,N,G,O,TB,S,E,TP,H> {
     public void setTransferPrice(TP transferPrice) {
         this.transferPrice = transferPrice;
     }
-    public H getHavingOrNot() {
-        return havingOrNot;
+    public TS getTransferStatus() {
+        return transferStatus;
     }
-    public void sethavingOrNot(H havingOrNot) {
-        this.havingOrNot = havingOrNot;
+    public void setTransferStatus(TS transferStatus) {
+        this.transferStatus = transferStatus;
     }
 }
