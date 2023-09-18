@@ -1,5 +1,10 @@
 package membershipManagement;
 
 public class MyInfo {
-sd
+	public static String name;
+	
+	public String Name(String input) {
+	name = input;
+	return input;
+	}
 }

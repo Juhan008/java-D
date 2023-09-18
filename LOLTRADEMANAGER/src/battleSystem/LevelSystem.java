@@ -1,5 +1,5 @@
 package battleSystem;
 
-public class FinalyPhase {
+public class LevelSystem {
 //미구현
 }

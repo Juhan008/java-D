@@ -1,5 +1,5 @@
 package battleSystem;
 
-public class FinalyPhase {
+public class TopObjectSysem {
 //미구현
 }

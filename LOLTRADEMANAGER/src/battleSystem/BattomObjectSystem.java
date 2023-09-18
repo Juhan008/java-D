@@ -1,5 +1,5 @@
 package battleSystem;
 
-public class FinalyPhase {
+public class BattomObjectSystem {
 //미구현
 }
