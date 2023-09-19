@@ -1,5 +1,5 @@
 package characterMangement;
-test
+
 
 public class CharaterRegulation<R,P,T,N,G,O,TB,S,E,TP,TS> {
 

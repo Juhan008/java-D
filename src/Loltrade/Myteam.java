@@ -1,8 +1,0 @@
-package Loltrade;
-
- class Myteam {
-
-		}
-	
-	 
-
