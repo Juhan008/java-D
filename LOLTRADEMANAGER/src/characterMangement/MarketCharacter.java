@@ -101,11 +101,11 @@ public class MarketCharacter {
     }
     public void addSupporters() {
 	        CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> supp1 = new CharaterRegulation<>(
-	            5, "Supporter", "Offensive", "서일", 50, 50, 50, 80, true, 100, true
+	            1, "Supporter", "Offensive", "서일", 50, 50, 50, 80, true, 100, true
 	        );
 	        supporterArl.add(supp1);
 	        CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> supp2 = new CharaterRegulation<>(
-	            4, "Supporter", "Offensive", "서이", 50, 50, 50, 80, true, 100, true
+	            2, "Supporter", "Offensive", "서이", 50, 50, 50, 80, true, 100, true
 	        );
 	        supporterArl.add(supp2);
 	        CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> supp3 = new CharaterRegulation<>(
@@ -113,11 +113,11 @@ public class MarketCharacter {
 	        );
 	        supporterArl.add(supp3);
 	        CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> supp4 = new CharaterRegulation<>(
-	            2, "Supporter", "Offensive", "서사", 50, 50, 50, 80, true, 100, true
+	            4, "Supporter", "Offensive", "서사", 50, 50, 50, 80, true, 100, true
 	        );
 	        supporterArl.add(supp4);
 	        CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> supp5 = new CharaterRegulation<>(
-	            1, "Supporter", "Offensive", "서오", 50, 50, 50, 80, true, 100, true
+	            5, "Supporter", "Offensive", "서오", 50, 50, 50, 80, true, 100, true
 	        );
 	        supporterArl.add(supp5);
     }
