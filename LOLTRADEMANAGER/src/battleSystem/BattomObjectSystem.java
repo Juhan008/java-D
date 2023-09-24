@@ -1,5 +1,8 @@
 package battleSystem;
 
 public class BattomObjectSystem {
-//미구현
+public void Dragon() {
+	
+}
+
 }

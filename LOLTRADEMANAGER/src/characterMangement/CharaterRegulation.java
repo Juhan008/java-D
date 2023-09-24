@@ -105,4 +105,8 @@ public class CharaterRegulation<R,P,T,N,G,O,TB,S,E,TP,TS> {
     public void setTransferStatus(TS transferStatus) {
         this.transferStatus = transferStatus;
     }
+	public int getFirstIntegerValue() {
+		// TODO Auto-generated method stub
+		return (int) linerRating;
+	}
 }
