@@ -6,16 +6,16 @@ import java.util.Random;
 import characterMangement.CharaterRegulation;
 
 public class BattleJoin {
-	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlMyTop = new ArrayList<>();
-	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlMyJungler = new ArrayList<>();
-	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlMyMid = new ArrayList<>();
-	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlMyAdc = new ArrayList<>();
-	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlMySupp = new ArrayList<>();
-	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlEnemyTop = new ArrayList<>();
-	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlEnemyJungler = new ArrayList<>();
-	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlEnemyMid = new ArrayList<>();
-	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlEnemyAdc = new ArrayList<>();
-	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlEnemySupp = new ArrayList<>();
+	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlMyTop = new ArrayList<>();
+	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlMyJungler = new ArrayList<>();
+	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlMyMid = new ArrayList<>();
+	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlMyAdc = new ArrayList<>();
+	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlMySupp = new ArrayList<>();
+	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlEnemyTop = new ArrayList<>();
+	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlEnemyJungler = new ArrayList<>();
+	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlEnemyMid = new ArrayList<>();
+	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlEnemyAdc = new ArrayList<>();
+	public ArrayList<BattleElement<Integer,String,String,String,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Boolean,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer,Boolean,Integer,Integer>> ArlEnemySupp = new ArrayList<>();
 	int linerRating=0;
 	String position = "";
 	String linerType = "";
@@ -54,7 +54,7 @@ public class BattleJoin {
 //		private BT baronTurns;//바론 남은턴
 //		private BB Baronbuff;//바론 증가치
 //		private CE checkElderDragon;//장로 드래곤 T/F
-//		private ET ElderDragonTurns;//장로 드래곤 증가치
+//		private ET ElderDragonTurns;//장로 드래곤 턴
 //		private EB ElderDragonBuff;//장로 드래곤 버프 증가치
 //		private R linerRating;
 //		private P position;
@@ -91,8 +91,8 @@ public class BattleJoin {
 				
 			        }
 			
-			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> Top = new BattleElement<>(
-					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, false, 0, 0, false, 0, 0);
+			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Boolean,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> Top = new BattleElement<>(
+					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, true, 0, 0, 0, 0, 0, 0, 0, 0, false, 0,50, false, 0, 80, false, 0, 80);
 				ArlMyTop.add(Top);
 
 			for (CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> character : inputArlJungler) {
@@ -105,8 +105,8 @@ public class BattleJoin {
 				teamBattingPower = character.getTeamBattingPower();
 				superPlay = character.getSuperPlay();
 			        }
-			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> Jungler = new BattleElement<>(
-					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, false, 0, 0, false, 0, 0);
+			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Boolean,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> Jungler = new BattleElement<>(
+					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, true, 0, 0, 0, 0, 0, 0, 0, 0, false, 0,50, false, 0, 80, false, 0, 80);
 			ArlMyJungler.add(Jungler);
 			for (CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> character : inputArlMid) {
 				linerRating = character.getLinerRating();
@@ -118,8 +118,8 @@ public class BattleJoin {
 				teamBattingPower = character.getTeamBattingPower();
 				superPlay = character.getSuperPlay();
 			        }
-			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> Mid = new BattleElement<>(
-					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, false, 0, 0, false, 0, 0);
+			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Boolean,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> Mid = new BattleElement<>(
+					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, true, 0, 0, 0, 0, 0, 0, 0, 0, false, 0,50, false, 0, 80, false, 0, 80);
 				ArlMyMid.add(Mid);
 			for (CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> character : inputArlAdc) {
 				linerRating = character.getLinerRating();
@@ -131,8 +131,8 @@ public class BattleJoin {
 				teamBattingPower = character.getTeamBattingPower();
 				superPlay = character.getSuperPlay();
 			        }
-			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> Adc = new BattleElement<>(
-					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, false, 0, 0, false, 0, 0);
+			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Boolean,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> Adc = new BattleElement<>(
+					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, true, 0, 0, 0, 0, 0, 0, 0, 0, false, 0,50, false, 0, 80, false, 0, 80);
 			ArlMyAdc.add(Adc);
 			for (CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> character : inputArlSupp) {
 				linerRating = character.getLinerRating();
@@ -144,8 +144,8 @@ public class BattleJoin {
 				teamBattingPower = character.getTeamBattingPower();
 				superPlay = character.getSuperPlay();
 			        }
-			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> Supp = new BattleElement<>(
-					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, false, 0, 0, false, 0, 0);
+			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Boolean,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> Supp = new BattleElement<>(
+					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, true, 0, 0, 0, 0, 0, 0, 0, 0, false, 0,50, false, 0, 80, false, 0, 80);
 			ArlMySupp.add(Supp);
 			for (CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> character : inputArlEnemyTop) {
 				linerRating = character.getLinerRating();
@@ -157,8 +157,8 @@ public class BattleJoin {
 				teamBattingPower = character.getTeamBattingPower();
 				superPlay = character.getSuperPlay();  
 			}
-			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> ETop = new BattleElement<>(
-					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, false, 0, 0, false, 0, 0);
+			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Boolean,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> ETop = new BattleElement<>(
+					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, true, 0, 0, 0, 0, 0, 0, 0, 0, false, 0,50, false, 0, 80, false, 0, 80);
 			ArlEnemyTop.add(ETop);
 			for (CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> character : inputArlEnemyJungler) {
 				linerRating = character.getLinerRating();
@@ -170,8 +170,8 @@ public class BattleJoin {
 				teamBattingPower = character.getTeamBattingPower();
 				superPlay = character.getSuperPlay();
 			}
-			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> EJungler = new BattleElement<>(
-					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, false, 0, 0, false, 0, 0);
+			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Boolean,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> EJungler = new BattleElement<>(
+					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, true, 0, 0, 0, 0, 0, 0, 0, 0, false, 0,50, false, 0, 0, false, 0, 0);
 			ArlEnemyJungler.add(EJungler);
 			for (CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> character : inputArlEnemyMid) {
 				linerRating = character.getLinerRating();
@@ -183,8 +183,8 @@ public class BattleJoin {
 				teamBattingPower = character.getTeamBattingPower();
 				superPlay = character.getSuperPlay();
 			}
-			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> EMid = new BattleElement<>(
-					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, false, 0, 0, false, 0, 0);
+			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Boolean,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> EMid = new BattleElement<>(
+					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, true, 0, 0, 0, 0, 0, 0, 0, 0, false, 0,50, false, 0, 80, false, 0, 80);
 			ArlEnemyMid.add(EMid);
 			for (CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> character : inputArlEnemyAdc) {
 				linerRating = character.getLinerRating();
@@ -196,8 +196,8 @@ public class BattleJoin {
 				teamBattingPower = character.getTeamBattingPower();
 				superPlay = character.getSuperPlay();
 			}
-			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> EAdc = new BattleElement<>(
-					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, false, 0, 0, false, 0, 0);
+			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Boolean,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> EAdc = new BattleElement<>(
+					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, true, 0, 0, 0, 0, 0, 0, 0, 0, false, 0,50, false, 0, 80, false, 0, 80);
 			ArlEnemyAdc.add(EAdc);
 			for (CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> character : inputArlEnemySupp) {
 				linerRating = character.getLinerRating();
@@ -209,8 +209,8 @@ public class BattleJoin {
 				teamBattingPower = character.getTeamBattingPower();
 				superPlay = character.getSuperPlay();
 			}
-			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> ESupp = new BattleElement<>(
-					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, false, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, false, 0, 0, false, 0, 0);
+			BattleElement<Integer, String, String, String, Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Boolean,Integer,Integer, Boolean, Integer, Integer, Boolean, Integer, Integer> ESupp = new BattleElement<>(
+					linerRating, position,linerType,linerName,growthPower, operationalPower, 0, teamBattingPower, 0, superPlay, false, true, 0, 0, 0, 0, 0, 0, 0, 0, false, 0,50, false, 0, 80, false, 0, 80);
 			ArlEnemySupp.add(ESupp);
 	}
 }

@@ -27,7 +27,7 @@ public class FinalTowerElement<F,FB,N,NB> {
     public FB getFinalTowerBreak() {
         return finalTowerBreak;
     }
-    public void setFristTowerBreak(FB finalTowerBreak) {
+    public void setFinalTowerBreak(FB finalTowerBreak) {
         this.finalTowerBreak = finalTowerBreak;
     }
     public N getnexus() {

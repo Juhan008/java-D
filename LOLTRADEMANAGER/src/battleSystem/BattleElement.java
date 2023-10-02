@@ -18,7 +18,7 @@ public class BattleElement<R, P, T, N, G, O, AO, TB, AT, S, CS, GP, K, D,ES, L, 
 	private D death;//데스
 	private ES exeStack;//쌓이는 경험치
 	private L level;//레벨
-	private FD fireDragon;//화염드래곤 추가 운영력 증가 
+	private FD fireDragon;//화염드래곤 추가 운영력 증가
 	private ED earthDragon;//대지 드래곤 추가 한타력 증가
 	private WD windDragon;//바람드래곤 슈퍼플레이 증가
 	private SD seaDragon;//바다드래곤 기본 운영력 기본 한타력 증가 
@@ -29,7 +29,7 @@ public class BattleElement<R, P, T, N, G, O, AO, TB, AT, S, CS, GP, K, D,ES, L, 
 	private BT baronTurns;//바론 남은턴
 	private BB Baronbuff;//바론 증가치
 	private CE checkElderDragon;//장로 드래곤 T/F
-	private ET ElderDragonTurns;//장로 드래곤 증가치
+	private ET ElderDragonTurns;//장로 드래곤 남은턴
 	private EB ElderDragonBuff;//장로 드래곤 버프 증가치
 	
 	

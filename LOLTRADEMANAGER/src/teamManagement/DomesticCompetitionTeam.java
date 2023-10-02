@@ -7,16 +7,16 @@ import characterMangement.CharaterRegulation;
 
 public class DomesticCompetitionTeam {
 	
-	public ArrayList<CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean>> DomesticCToplinerArl = new ArrayList<>();
-	public ArrayList<CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean>> DomesticCjunglerArl = new ArrayList<>();
-	public ArrayList<CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean>> DomesticCMidlinerArl = new ArrayList<>();
-	public ArrayList<CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean>> DomesticCAdcArl = new ArrayList<>();
-	public ArrayList<CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean>> DomesticCSupporterArl = new ArrayList<>();
+	public ArrayList<CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean>> domesticCToplinerArl = new ArrayList<>();
+	public ArrayList<CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean>> domesticCjunglerArl = new ArrayList<>();
+	public ArrayList<CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean>> domesticCMidlinerArl = new ArrayList<>();
+	public ArrayList<CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean>> domesticCAdcArl = new ArrayList<>();
+	public ArrayList<CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean>> domesticCSupporterArl = new ArrayList<>();
 	public int teamRating=0;
 	public int averageRating=0;
 	
 
-	public void DomesticTeamMatching(
+	public void domesticTeamMatching(
 			ArrayList<CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean>> inputArlTop,
 			ArrayList<CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean>> inputArlJungler,
 			ArrayList<CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean>> inputArlMid,
@@ -58,7 +58,7 @@ public class DomesticCompetitionTeam {
 	                Random random = new Random();
 	                int randomIndex = random.nextInt(matchingTop.size());
 	                CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> selectedCharacter = matchingTop.get(randomIndex);
-	                DomesticCToplinerArl.add(selectedCharacter);
+	                domesticCToplinerArl.add(selectedCharacter);
 	            }
 		}
 		for (CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> character : inputArlEnemyJungler) {
@@ -69,7 +69,7 @@ public class DomesticCompetitionTeam {
 	                Random random = new Random();
 	                int randomIndex = random.nextInt(matchingJungle.size());
 	                CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> selectedCharacter = matchingJungle.get(randomIndex);
-	                DomesticCjunglerArl.add(selectedCharacter);
+	                domesticCjunglerArl.add(selectedCharacter);
 			  }
 		}
 		for (CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> character : inputArlEnemyMid) {
@@ -80,7 +80,7 @@ public class DomesticCompetitionTeam {
 	                Random random = new Random();
 	                int randomIndex = random.nextInt(matchingMid.size());
 	                CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> selectedCharacter = matchingMid.get(randomIndex);
-	                DomesticCMidlinerArl.add(selectedCharacter);
+	                domesticCMidlinerArl.add(selectedCharacter);
 			  }
 		}
 		for (CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> character : inputArlEnemyAdc) {
@@ -91,7 +91,7 @@ public class DomesticCompetitionTeam {
 	                Random random = new Random();
 	                int randomIndex = random.nextInt(matchingAdc.size());
 	                CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> selectedCharacter = matchingAdc.get(randomIndex);
-	                DomesticCAdcArl.add(selectedCharacter);
+	                domesticCAdcArl.add(selectedCharacter);
 			  }
 		}
 		for (CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> character : inputArlEnemySupp) {
@@ -102,7 +102,7 @@ public class DomesticCompetitionTeam {
 	                Random random = new Random();
 	                int randomIndex = random.nextInt(matchingSupp.size());
 	                CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> selectedCharacter = matchingSupp.get(randomIndex);
-	                DomesticCSupporterArl.add(selectedCharacter);
+	                domesticCSupporterArl.add(selectedCharacter);
 			  }
 		
 		}

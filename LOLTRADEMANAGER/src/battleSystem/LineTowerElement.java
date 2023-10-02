@@ -71,10 +71,10 @@ public class LineTowerElement<F,FB,S,SB,T,TB,I,IB> {
     public void setInhitor(I inhitor) {
         this.inhitor = inhitor;
     }
-    public IB getThInhitorBreak() {
+    public IB getInhitorBreak() {
         return inhitorBreak;
     }
-    public void setinhitorBreak(IB tinhitorBreak) {
+    public void setInhitorBreak(IB tinhitorBreak) {
         this.inhitorBreak = inhitorBreak;
     }
 }

@@ -86,6 +86,7 @@ public class TransferMember {
 		     else if (character.getTransferStatus()&&character.getEquippedOrNot() && "Supporter".equals(character.getPosition())) {
 		    	 System.out.println("교체전 서포터 : "+character.getLinerName()+" 타입 : "+character.getLinerType());
 		    	 beforeLiner=character.getLinerName();}
+		     else {System.out.println("교체 선수를 찾을 수없 습니다.");}
 		} 
 		     inputEquippedArl.clear();
 		for (CharaterRegulation<Integer, String, String, String, Integer, Integer, Integer, Integer, Boolean, Integer, Boolean> character : inputAllArl) {
