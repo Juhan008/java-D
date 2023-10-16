@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+form {
+    display: flex;
+    flex-direction: column;  /* 수직 방향으로 아이템 정렬 */
+    align-items: center;     /* 가로 중앙 정렬 */
+}
+.bg {
+    background-image: url('../img/login2.png');
+    background-size: cover;
+    width: 1280px;
+    height: 720px;
+    position: absolute;
+}
+.loginbox{    
+	background-image: url('../img/login.png');
+    background-size: cover;
+    width: auto;
+    height: 721px;
+    position: absolute;
+    right: 80%;}
+    
+.id {
+    position: absolute;
+    top: 33%;
+    right: 80%; 
+}
+.password{
+	position: absolute;
+	top: 41%;
+	right: 80%;
+}
+.submit{
+	position: absolute;
+	top: 70%;
+	right: 84%;
+}
+.Text {
+	font-size: 17px;         /* 폰트 크기 설정 */
+    color: rgb(255, 255, 255);             /* 폰트 색상 설정 */
+    font-weight: bold;  /* 텍스트를 굵게 만듭니다. */   
+}
+input[type="text"] {
+  background: url('../img/logininput.png') no-repeat center center;
+  background-size: cover; /* 이미지 크기 조절 */
+  width: 160px; /* 입력 상자의 너비 설정 */
+  height: 30px; /* 입력 상자의 높이 설정 */
+  border: none; /* 테두리 제거 */
+}
+input[type="password"] {
+  background: url('../img/logininput.png') no-repeat center center;
+  background-size: cover; /* 이미지 크기 조절 */
+  width: 160px; /* 입력 상자의 너비 설정 */
+  height: 30px; /* 입력 상자의 높이 설정 */
+  border: none; /* 테두리 제거 */
+}
+input[type="submit"] {
+  background: url('../img/loginsub.png') no-repeat center center;
+  background-size: cover; /* 이미지 크기 조절 */
+  width: 80px; /* 입력 상자의 너비 설정 */
+  height: 80px; /* 입력 상자의 높이 설정 */
+  border: none; /* 테두리 제거 */
+}
+input[type="submit"]:hover {
+  background: url('../img/loginsub2.png') no-repeat center center;
+  background-size: cover; /* 이미지 크기 조절 */
+  width: 80px; /* 입력 상자의 너비 설정 */
+  height: 80px; /* 입력 상자의 높이 설정 */
+  border: none; /* 테두리 제거 */
+}
+
