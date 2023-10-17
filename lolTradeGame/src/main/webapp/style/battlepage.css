@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+.bg {
+	background-image: url('../img/battle.png');
+	background-size: cover;
+	width: 1280px;
+	height: 720px;
+	position: absolute;
+
+}
+.myturn {
+	background-image: url('../img/playerturn.png');
+	background-size: cover;
+	width: 876px;
+	height: 582px;
+	position: absolute;
+	top: 0%;
+	left: 10%;
+}
+.playerline {
+	background-image: url('../img/battleline3.png');
+	background-size: cover;
+	width: 1256px;
+	height: 409px;
+	position: absolute;
+	top: 110px;
+	left: 11px;
+}
+.battlebar {
+	background-image: url('../img/battlebar.png');
+	background-size: cover;
+	width: 1280px;
+	height: 720px;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+.messege {
+	background: url('../img/messege2.png') no-repeat center center;
+	background-size: cover;
+	width: 375px;
+	height: 175px;
+	position: absolute;
+	top: 70%;
+	right: 35%;
+}
+.mytop{
+	background: url('../img/linebtn.png');
+	background-size: cover;
+	width: 63px;
+	height: 104px;
+	position: absolute;
+	top: 25%;
+	left: 30%;
+	border: none; /* 테두리 제거 */
+  	
+}
+.mymid{
+	background: url('../img/linebtn.png');
+	background-size: cover;
+	width: 63px;
+	height: 104px;
+	position: absolute;
+	top: 37%;
+	left: 41%;
+	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.mybot{
+	background: url('../img/linebtn.png');
+	background-size: cover;
+	width: 63px;
+	height: 104px;
+	position: absolute;
+	top: 49%;
+	left: 52%;
+	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.mynextower{
+	background: url('../img/linebtn.png');
+	background-size: cover;
+	width: 63px;
+	height: 104px;
+	position: absolute;
+	top: 44%;
+	left: 36%;
+	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.mynex{
+	background: url('../img/linebtn.png');
+	background-size: cover;
+	width: 63px;
+	height: 104px;
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.emytop{
+	background: url('../img/linebtn.png');
+	background-size: cover;
+	width: 63px;
+	height: 104px;
+	position: absolute;
+	top: 16%;
+	left: 38%;
+	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.emymid{
+	background: url('../img/linebtn.png');
+	background-size: cover;
+	width: 63px;
+	height: 104px;
+	position: absolute;
+	top: 27%;
+	left: 50%;
+	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.emybot{
+	background: url('../img/linebtn.png');
+	background-size: cover;
+	width: 63px;
+	height: 104px;
+	position: absolute;
+	top: 42%;
+	left: 63%;
+	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.emynextower{
+	background: url('../img/linebtn.png');
+	background-size: cover;
+	width: 63px;
+	height: 104px;
+	position: absolute;
+	top: 21%;
+	left: 56%;
+	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.emynex{
+	background: url('../img/linebtn.png');
+	background-size: cover;
+	width: 63px;
+	height: 104px;
+	position: absolute;
+	top: 15%;
+	left: 61%;
+	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+
+.emytop:hover{
+	background: url('../img/onlinebtn.png');
+	background-size: cover;
+	width: 63px;
+	height: 104px;
+	position: absolute;
+	top: 16%;
+	left: 38%;
+	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.emymid:hover{
+	background: url('../img/onlinebtn.png');
+	background-size: cover;
+	width: 63px;
+	height: 104px;
+	position: absolute;
+	top: 27%;
+	left: 50%;
+	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.emybot:hover{
+	background: url('../img/onlinebtn.png');
+	background-size: cover;
+	width: 63px;
+	height: 104px;
+	position: absolute;
+	top: 42%;
+	left: 63%;
+	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.emynextower:hover{
+	background: url('../img/onlinebtn.png');
+	background-size: cover;
+	width: 63px;
+	height: 104px;
+	position: absolute;
+	top: 21%;
+	left: 56%;
+	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.emynex:hover{
+	background: url('../img/onlinebtn.png');
+	background-size: cover;
+	width: 63px;
+	height: 104px;
+	position: absolute;
+	top: 15%;
+	left: 61%;
+	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+ }

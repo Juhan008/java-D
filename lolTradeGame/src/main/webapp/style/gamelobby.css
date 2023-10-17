@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+.bg {
+	background-image: url('../img/gameflow-background.jpg');
+	background-size: cover;
+	width: 1280px;
+	height: 720px;
+	position: relative;
+
+}
+
+.menu {
+	background-image: url('../img/menubar.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 1280px;
+	height: auto;
+	top: 0%;
+	right: 0%;
+}
+
+.money {
+	position: absolute;
+	top: 70%;
+	left: 80%;
+	width: 150px;
+	height: 130px;
+}
+.gamestart {
+	position: absolute;
+	top: 20%;
+	right: 80%;
+	background: url('../img/startbnt.jpg') no-repeat center center;
+  	background-size: cover; /* 이미지 크기 조절 */
+  	width: 200px; /* 입력 상자의 너비 설정 */
+  	height: 50px; /* 입력 상자의 높이 설정 */
+  	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.home {
+	position: absolute;
+	top: 70%;
+	left: 30%;
+	background: url('../img/inmyinfobtn.png') no-repeat center center;
+  	background-size: cover; /* 이미지 크기 조절 */
+  	width: 50px; /* 입력 상자의 너비 설정 */
+  	height: 85px; /* 입력 상자의 높이 설정 */
+  	border: none; /* 테두리 제거 */
+}
+.myinfo {
+	position: absolute;
+	top: 70%;
+	left: 55%;
+	background: url('../img/inmyinfobtn.png') no-repeat center center;
+  	background-size: cover; /* 이미지 크기 조절 */
+  	width: 50px; /* 입력 상자의 너비 설정 */
+  	height: 85px; /* 입력 상자의 높이 설정 */
+  	border: none; /* 테두리 제거 */
+}
+
+.collection {
+	position: absolute;
+	top: 32%;
+	left: 60%;
+	background: url('../img/incollerctionbtn.png') no-repeat center center;
+  	background-size: cover; /* 이미지 크기 조절 */
+  	width: 50px; /* 입력 상자의 너비 설정 */
+  	height: 85px; /* 입력 상자의 높이 설정 */
+  	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.shop {
+	position: absolute;
+	top: 32%;
+	left: 70%;
+	background: url('../img/instorebtn.png') no-repeat center center;
+  	background-size: cover; /* 이미지 크기 조절 */
+  	width: 50px; /* 입력 상자의 너비 설정 */
+  	height: 85px; /* 입력 상자의 높이 설정 */
+  	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+
+.Text {
+	width: 1px;
+	height: 1px;
+}

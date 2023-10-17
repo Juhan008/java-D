@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+.bg {
+	background-image: url('../img/battleselet.png');
+	background-size: cover;
+	width: 1280px;
+	height: 720px;
+	position: absolute;
+
+}
+.menu {
+	background-image: url('../img/menubar.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 1280px;
+	height: 86px;
+	top: 0%;
+	right: 0%;
+}
+
+.money {
+	position: absolute;
+	top: 3%;
+	left: 75%;
+	width: 150px;
+	height: 130px;
+	color: white;
+}
+.gamestart {
+	position: absolute;
+	top: 3%;
+	right: 80%;
+	background: url('../img/startbnt.jpg') no-repeat center center;
+  	background-size: cover; /* 이미지 크기 조절 */
+  	width: 200px; /* 입력 상자의 너비 설정 */
+  	height: 50px; /* 입력 상자의 높이 설정 */
+  	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.gamestart:hover {
+	position: absolute;
+	top: 3%;
+	right: 80%;
+	background: url('../img/onstartbnt.png') no-repeat center center;
+  	background-size: cover; /* 이미지 크기 조절 */
+  	width: 200px; /* 입력 상자의 너비 설정 */
+  	height: 50px; /* 입력 상자의 높이 설정 */
+  	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.home {
+	position: absolute;
+	top: 0%;
+	left: 30%;
+	background: url('../img/inhomebtn.png') no-repeat center center;
+  	background-size: cover; /* 이미지 크기 조절 */
+  	width: 51px; /* 입력 상자의 너비 설정 */
+  	height: 84px; /* 입력 상자의 높이 설정 */
+  	border: none; /* 테두리 제거 */
+}
+.myinfo {
+	position: absolute;
+	top: 0%;
+	left: 60%;
+	background: url('../img/myinfobtn.png') no-repeat center center;
+  	background-size: cover; /* 이미지 크기 조절 */
+  	width: 51px; /* 입력 상자의 너비 설정 */
+  	height: 84px; /* 입력 상자의 높이 설정 */
+  	border: none; /* 테두리 제거 */
+}
+.myinfo:hover {
+	position: absolute;
+	top: 0%;
+	left: 60%;
+	background: url('../img/onmyinfobtn.png') no-repeat center center;
+  	background-size: cover; /* 이미지 크기 조절 */
+  	width: 51px; /* 입력 상자의 너비 설정 */
+  	height: 84px; /* 입력 상자의 높이 설정 */
+  	border: none; /* 테두리 제거 */
+}
+
+.collection {
+	position: absolute;
+	top: 0%;
+	left: 64%;
+	background: url('../img/collectionbtn.png') no-repeat center center;
+  	background-size: cover; /* 이미지 크기 조절 */
+  	width: 51px; /* 입력 상자의 너비 설정 */
+  	height: 84px; /* 입력 상자의 높이 설정 */
+  	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.collection:hover {
+	position: absolute;
+	top: 0%;
+	left: 64%;
+	background: url('../img/oncollectionbtn.png') no-repeat center center;
+  	background-size: cover; /* 이미지 크기 조절 */
+  	width: 51px; /* 입력 상자의 너비 설정 */
+  	height: 84px; /* 입력 상자의 높이 설정 */
+  	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.shop {
+	position: absolute;
+	top: 0%;
+	left: 68%;
+	background: url('../img/store.png') no-repeat center center;
+  	background-size: cover; /* 이미지 크기 조절 */
+  	width: 51px; /* 입력 상자의 너비 설정 */
+  	height: 84px; /* 입력 상자의 높이 설정 */
+  	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.shop:hover {
+	position: absolute;
+	top: 0%;
+	left: 68%;
+	background: url('../img/onstorebtn.png') no-repeat center center;
+  	background-size: cover; /* 이미지 크기 조절 */
+  	width: 51px; /* 입력 상자의 너비 설정 */
+  	height: 84px; /* 입력 상자의 높이 설정 */
+  	border: none; /* 테두리 제거 */
+  	transition: transform 0.2s ease;
+}
+.Text {
+	width: 1px;
+	height: 1px;
+}

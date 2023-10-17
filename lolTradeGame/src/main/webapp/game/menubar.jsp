@@ -11,36 +11,37 @@ if (request.getProtocol().equals("HTTP/1.1"))
 <html>
 <head>
 <meta charset="UTF-8">
-<title>메인</title>
+<title>메뉴바</title>
 <link rel="stylesheet" href="../style/index.css">
-<link rel="stylesheet" href="../style/main.css">
+<link rel="stylesheet" href="../style/menubar.css">
 <script src="../script/main.js"></script>
 </head>
 <body>
-<div id="root" class="bg">
+<div id="menubar">
+<div class="stick"></div>
+<div class="bg">
+<div class="meunbar">
 		<div class="money">0000원</div>
-		<div class="menu"></div>
-		<div>
 			<button class="gamestart" id="gamestart" value=""
 				onclick="location.href='/lolTradeGame/game/gameselect.jsp'">
 			</button>
-		</div>
-		<div>
+
 			<button class="home" id="home" value=""
 				onclick="location.href='/lolTradeGame/game/main.jsp'"></button>
-		</div>
-		<div>
+		
+		
 			<button class="myinfo" id="myinfo" value=""
 				onclick="location.href='/lolTradeGame/game/myinfo.jsp'"></button>
-		</div>
-		<div>
+		
+		
 			<button class="collection" id="collection" value=""
 				onclick="location.href='/lolTradeGame/game/collection.jsp'"></button>
-		</div>
-		<div>
+		
+	
 			<button class="shop" id="shop" value=""
 				onclick="location.href='/lolTradeGame/game/shop.jsp'"></button>
 		</div>
+	</div>
 	</div>
 </body>
 </html>

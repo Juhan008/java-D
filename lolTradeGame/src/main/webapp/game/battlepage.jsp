@@ -7,6 +7,7 @@ response.setHeader("Pragma", "no-cache");
 response.setDateHeader("Expires", 0);
 if (request.getProtocol().equals("HTTP/1.1"))
 	response.setHeader("Cache-Control", "no-cache");
+int turn = 1;
 %>
 <html>
 <head>
@@ -16,21 +17,24 @@ if (request.getProtocol().equals("HTTP/1.1"))
 <script src="../script/main.js"></script>
 </head>
 <body>
+
 	<div class="bg">
-		<div><button class="myturn"></button></div>
-		<div><button class="battlebar"></button></div>
-		<div><button class="playerline"></button></div>
-		<div><button class="mytop"></button></div>
-		<div><button class="mymid"></button></div>
-		<div><button class="mybot"></button></div>
-		<div><button class="mynextower"></button></div>
-		<div><button class="mynex"></button></div>
-		<div><button class="emytop"></button></div>
-		<div><button class="emymid"></button></div>
-		<div><button class="emybot"></button></div>
-		<div><button class="emynextower"></button></div>
-		<div><button class="emynex"></button></div>
-		
+		<div class="myturn"></div>
+		<div class="battlebar"></div>
+		<div class="playerline"></div>
+		<div class="turn"></div>
+		<div><button class="mytop" value=""></button></div>
+		<div><button class="mymid" value=""></button></div>
+		<div><button class="mybot" value=""></button></div>
+		<div><button class="mynextower" value=""></button></div>
+		<div><button class="mynex" value=""></button></div>
+		<div><button class="emytop" value=""></button></div>
+		<div><button class="emymid" value=""></button></div>
+		<div><button class="emybot" value=""></button></div>
+		<div><button class="emynextower" value=""></button></div>
+		<div><button class="emynex" value=""></button></div>
+	<div><p class=messege></div>
 	</div>
+	
 </body>
 </html>

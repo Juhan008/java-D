@@ -11,7 +11,7 @@ if (request.getProtocol().equals("HTTP/1.1"))
 <html>
 <head>
 <meta charset="UTF-8">
-<title>메인</title>
+<title>컬렉션</title>
 <link rel="stylesheet" href="../css/collection.css">
 <script src="../script/main.js"></script>
 </head>

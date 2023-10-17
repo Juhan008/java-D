@@ -11,14 +11,15 @@ if (request.getProtocol().equals("HTTP/1.1"))
 <html>
 <head>
 <meta charset="UTF-8">
-<title>메인</title>
+<title>내정보</title>
 <link rel="stylesheet" href="../css/myinfo.css">
 <script src="../script/main.js"></script>
 </head>
 <body>
 	<div class="bg">
-		<div class="money">0000원</div>
+		<div class="myfag" value=""></div>
 		<div class="menu"></div>
+		<div class="money">0000원</div>
 		<div>
 			<button class="gamestart" id="gamestart" value=""
 				onclick="location.href='/lolTradeGame/game/gameselect.jsp'">
@@ -39,6 +40,19 @@ if (request.getProtocol().equals("HTTP/1.1"))
 		<div>
 			<button class="shop" id="shop" value=""
 				onclick="location.href='/lolTradeGame/game/shop.jsp'"></button>
+		</div>
+
+		<div class="recode" value="">
+			<%
+			for (int i = 1; i <= 20; i++) {
+			%>
+			<div class="recodesc" value="">
+				<p>
+					<%=i%></p>
+			</div>
+			<%
+			}
+			%>
 		</div>
 	</div>
 </body>

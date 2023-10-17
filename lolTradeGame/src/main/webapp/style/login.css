@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+.bg {
+	background: url('../img/login2.png');
+	background-size: cover;
+	text-align: left;
+	display: inline-block;
+	
+}
+
+.login {
+	text-align: center;
+	background: url('../img/login.png');
+	background-size: cover;
+	width: 26%;
+	height: 100%;
+}
+
+form.loginbox {
+	text-align: center;
+	padding: 65% 37% 0% 33%;
+	width: 30%;
+	height: 60%;
+}
+
+.logininfo {
+	background: #ededed;
+	background-size: cover;
+	top: 33%;
+	right: 80%;
+	margin: 0% 0% 17%;
+	border: none;
+	width: 160px;
+	height: 30px;
+	border-radius: 5%;
+}
+
+.submit {
+	margin: 90% 0% 30%;
+}
+
+input[type="submit"] {
+	background: url('../img/loginsub.png') no-repeat center center;
+	background-size: cover;
+	width: 80px;
+	height: 80px;
+	border: none;
+}
+
+input[type="submit"]:hover {
+	background: url('../img/loginsub2.png') no-repeat center center;
+	background-size: cover;
+	width: 80px;
+	height: 80px;
+	border: none;
+}
+
+.login-video {
+	width: 74%;
+	height: 100%;
+	
+}

@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+body {
+    display: block;
+    margin: 0px;
+}
+.stick {
+	background: #785a28;
+	background-size: cover;
+	width: 100%;
+	height: 1%;
+}
+.bg {
+	background: rgb(1, 10, 19);
+	background-size: cover;
+	width: 100%;
+	height:99%;
+}
+.meunbar {
+	background: url('../img/menubar.png') no-repeat center center;
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	
+}
+.money {
+	width: 100px;
+	height: 50px;
+	color: white;
+}
+.gamestart {
+	background: url('../img/startbnt.jpg') no-repeat center center;
+	background-size: cover;
+	width: 200px;
+	height: 50px;
+	border: none;
+	transition: transform 0.2s ease;
+}
+
+.gamestart:hover {
+	background: url('../img/onstartbnt.png') no-repeat center center;
+	background-size: cover;
+	width: 200px;
+	height: 50px;
+	border: none;
+	transition: transform 0.2s ease;
+}
+
+.home {
+	background: url('../img/inhomebtn.png') no-repeat center center;
+	background-size: cover;
+	width: 51px;
+	height: 84px;
+	border: none;
+}
+
+.myinfo {
+	background: url('../img/myinfobtn.png') no-repeat center center;
+	background-size: cover;
+	width: 51px;
+	height: 84px;
+	border: none;
+}
+
+.myinfo:hover {
+	background: url('../img/onmyinfobtn.png') no-repeat center center;
+	background-size: cover;
+	width: 51px;
+	height: 84px;
+	border: none;
+}
+
+.collection {
+	background: url('../img/collectionbtn.png') no-repeat center center;
+	background-size: cover;
+	width: 51px;
+	height: 84px;
+	border: none;
+	transition: transform 0.2s ease;
+}
+
+.collection:hover {
+	background: url('../img/oncollectionbtn.png') no-repeat center center;
+	background-size: cover;
+	width: 51px;
+	height: 84px;
+	border: none;
+	transition: transform 0.2s ease;
+}
+
+.shop {
+	background: url('../img/store.png') no-repeat center center;
+	background-size: cover;
+	width: 51px;
+	height: 84px;
+	border: none;
+	transition: transform 0.2s ease;
+}
+
+.shop:hover {
+	background: url('../img/onstorebtn.png') no-repeat center center;
+	background-size: cover;
+	width: 51px;
+	height: 84px;
+	border: none;
+	transition: transform 0.2s ease;
+}
