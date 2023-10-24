@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <%
 response.setHeader("Cache-Control", "no-store");
@@ -8,34 +9,32 @@ response.setDateHeader("Expires", 0);
 if (request.getProtocol().equals("HTTP/1.1"))
 	response.setHeader("Cache-Control", "no-cache");
 %>
+
 <html>
 <head>
 <meta charset="UTF-8">
-<title>게임대기실</title>
-<link rel="stylesheet" href="../css/gamelobby.css">
-<script src="../script/main.js"></script>
+<title>게임로비</title>
+<link rel="stylesheet" href="../style/index.css">
+<link rel="stylesheet" href="../style/gamelobby.css">
 </head>
 <body>
-	<div class="bg">
-		<div class="money">0000원</div>
-		<div class="menu">
-			<div class="gamestart">
-				<button id="gamestart" value="default"
-					onclick="location.href='/lolTradeGame/game/gameselect.jsp'">게임시작</button>
+	<div id="root" class="bg">
+		<div id="menubar"><jsp:include page="menubar.jsp"></jsp:include></div>
+		<div id="contents" class="lobbypaper">
+			<div class="champion">
+			<div class="top"></div>
+			<div class="jungle"></div>
+			<div class="mid"></div>
+			<div class="adc"></div>
+			<div class="supp"></div>
 			</div>
-			<div class="myinfo">
-				<button id="myinfo" value="default"
-					onclick="location.href='/lolTradeGame/game/myinfo.jsp'">내정보</button>
-			</div>
-			<div class="collection">
-				<button id="collection" value="default"
-					onclick="location.href='/lolTradeGame/game/collection.jsp'">가방</button>
-			</div>
-			<div class="shop">
-				<button id="shop" value="default"
-					onclick="location.href='/lolTradeGame/game/shop.jsp'">상점</button>
-			</div>
-		</div>
+			<div class="go-action">
+			<button class="back-select" value=""
+				onclick="location.href='/lolTradeGame/game/gameselect.jsp'"></button>
+			<button class="start-go" value=""
+				onclick="location.href='/lolTradeGame/game/battlepage.jsp'"></button>
+		</div></div>
 	</div>
+
 </body>
 </html>

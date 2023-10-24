@@ -13,11 +13,10 @@ int turn = 1;
 <head>
 <meta charset="UTF-8">
 <title>대전</title>
-<link rel="stylesheet" href="../css/battlepage.css">
+<link rel="stylesheet" href="../style/battlepage.css">
 <script src="../script/main.js"></script>
 </head>
 <body>
-
 	<div class="bg">
 		<div class="myturn"></div>
 		<div class="battlebar"></div>

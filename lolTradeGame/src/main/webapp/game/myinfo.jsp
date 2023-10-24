@@ -12,36 +12,13 @@ if (request.getProtocol().equals("HTTP/1.1"))
 <head>
 <meta charset="UTF-8">
 <title>내정보</title>
-<link rel="stylesheet" href="../css/myinfo.css">
-<script src="../script/main.js"></script>
+<link rel="stylesheet" href="../style/index.css">
+<link rel="stylesheet" href="../style/myinfo.css">
 </head>
 <body>
-	<div class="bg">
-		<div class="myfag" value=""></div>
-		<div class="menu"></div>
-		<div class="money">0000원</div>
-		<div>
-			<button class="gamestart" id="gamestart" value=""
-				onclick="location.href='/lolTradeGame/game/gameselect.jsp'">
-			</button>
-		</div>
-		<div>
-			<button class="home" id="home" value=""
-				onclick="location.href='/lolTradeGame/game/main.jsp'"></button>
-		</div>
-		<div>
-			<button class="myinfo" id="myinfo" value=""
-				onclick="location.href='/lolTradeGame/game/myinfo.jsp'"></button>
-		</div>
-		<div>
-			<button class="collection" id="collection" value=""
-				onclick="location.href='/lolTradeGame/game/collection.jsp'"></button>
-		</div>
-		<div>
-			<button class="shop" id="shop" value=""
-				onclick="location.href='/lolTradeGame/game/shop.jsp'"></button>
-		</div>
-
+	<div id="root" class="bg">
+		<div id="menubar"><jsp:include page="menubar.jsp"></jsp:include></div>
+		<div class="infopage">
 		<div class="recode" value="">
 			<%
 			for (int i = 1; i <= 20; i++) {
@@ -54,6 +31,7 @@ if (request.getProtocol().equals("HTTP/1.1"))
 			}
 			%>
 		</div>
-	</div>
+		<div class="myfag" value=""></div>
+	</div></div>
 </body>
 </html>

@@ -4,7 +4,7 @@
 	background: url('../img/login2.png');
 	background-size: cover;
 	text-align: left;
-	display: inline-block;
+	display: flex;
 	
 }
 
@@ -18,8 +18,8 @@
 
 form.loginbox {
 	text-align: center;
-	padding: 65% 37% 0% 33%;
-	width: 30%;
+	padding: 65% 25% 0% 27%;
+	width: 48%;
 	height: 60%;
 }
 
@@ -38,8 +38,8 @@ form.loginbox {
 .submit {
 	margin: 90% 0% 30%;
 }
-
 input[type="submit"] {
+	cursor: pointer;
 	background: url('../img/loginsub.png') no-repeat center center;
 	background-size: cover;
 	width: 80px;
@@ -54,9 +54,12 @@ input[type="submit"]:hover {
 	height: 80px;
 	border: none;
 }
-
-.login-video {
+.login-video-div{
 	width: 74%;
+	height: 100%;
+}
+.login-video {
+	width: 100%;
 	height: 100%;
 	
 }

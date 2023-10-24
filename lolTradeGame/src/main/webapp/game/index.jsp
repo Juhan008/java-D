@@ -21,9 +21,9 @@
 				<%--=response.sendRedirect("main.jsp") --%>
 			</form>
 		</div>
-<!-- 		<video class="login-video" autoplay muted>
+	<div class="login-video-div"><video class="login-video" autoplay muted  loop="20">
 			<source src="../vdieo/npe-ft-intro-video.webm" type="video/webm">
-		</video> -->
+		</video></div>
 	</div>
 </body>
 </html>
