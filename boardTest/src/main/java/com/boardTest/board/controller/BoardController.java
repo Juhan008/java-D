@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import com.boardTest.board.domain.Board;
+import com.boardTest.board.service.BoardService;
 
 @Controller
 public class BoardController {

@@ -10,18 +10,16 @@ import lombok.RequiredArgsConstructor;
 @AllArgsConstructor
 @RequiredArgsConstructor
 public class Board {
-
   private int id;
-  @NonNull
-  private String userId;
   @NonNull
   private String title;
   @NonNull
   private String content;
   private int views = 0;
-  private int like = 0;
+  private int likes = 0;
   private int hates = 0;
   private Timestamp createdAt;
-  private Boolean isWithdrew = false;
-
+  private boolean isWithdrew = false;
+  @NonNull
+  private int userId;
 }
