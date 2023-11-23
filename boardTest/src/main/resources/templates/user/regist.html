@@ -46,13 +46,25 @@
   </head>
   <body>
     <div th:fragment="registFragment" class="container">
-      <form id="registForm" action="/user/regist" method="post" class="row">
+      <!-- <div
+        id="parent"
+        style="background-color: cornsilk"
+        contenteditable="true"
+      >
+        부모
+        <div id="child1">
+          자식1
+          <div id="child-child">손자</div>
+        </div>
+        <div id="child2">자식2</div>
+      </div> -->
+      <form action="/user/regist" method="post" class="row" id="regist-form">
         <div class="input-group mb-3">
           <span class="input-group-text" id="user-id">ID</span>
           <input
             type="text"
             class="form-control"
-            placeholder="3~20자의 영문자과 숫자"
+            placeholder="ID"
             aria-label="user-id"
             aria-describedby="user-id"
             name="userId"
@@ -61,7 +73,7 @@
           <input
             type="password"
             class="form-control"
-            placeholder="10~30자의 대소문자, 숫자, 특수문자(!@#$%^&)를 포함"
+            placeholder="password"
             aria-label="password"
             aria-describedby="password"
             name="password"
@@ -72,7 +84,7 @@
           <input
             type="text"
             class="form-control"
-            placeholder="2~10자의 한글 또는 4~20자의 영어"
+            placeholder="Name"
             aria-label="name"
             aria-describedby="name"
             id="name"
@@ -84,7 +96,7 @@
           <input
             type="text"
             class="form-control"
-            placeholder=""-"를 포함하여 12~13자리 또는 "-"를 제외한 10~11자리"
+            placeholder="Phone Number"
             aria-label="phone"
             aria-describedby="phone"
             id="phone"
@@ -96,7 +108,7 @@
           <input
             type="text"
             class="form-control"
-            placeholder="5~100자"
+            placeholder="Address"
             aria-label="address"
             aria-describedby="address"
             id="address"
@@ -108,7 +120,7 @@
           <input
             type="email"
             class="form-control"
-            placeholder="example@gmail.com/org/co.kr/net"
+            placeholder="example@gmail.com"
             aria-label="email"
             aria-describedby="email"
             id="email"
@@ -124,7 +136,7 @@
             aria-label="git-address"
             aria-describedby="git-address"
             id="git-address"
-            name="gitAddress"
+            name="git-address"
           />
         </div>
 
@@ -180,80 +192,8 @@
           <button class="btn btn-primary btn-lg m-auto">Sign in</button>
         </div>
       </form>
-      <div id="errorModal" class="modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">회원 정보</h5>
-      </div>
-      <div class="modal-body">
-        <p id="errorMessage"></p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
-      </div>
-    </div>
-  </div>
-</div> 	
-      <script>
-		  document.getElementById('registForm').addEventListener('submit', function(event) {
-		    var userId = document.forms["registForm"]["userId"].value;
-		    var password = document.forms["registForm"]["password"].value;
-		   	var name = document.forms["registForm"]["name"].value;
-			var phoneNumber = document.forms["registForm"]["phone"].value;
-			var address = document.forms["registForm"]["address"].value;
-			var email = document.forms["registForm"]["email"].value;
-			var gitAddress = document.forms["registForm"]["gitAddress"].value;
-		
-		    var errorMessage = '';
-		    if(!/^[a-zA-Z0-9]{3,20}$/.test(userId)) {
-		      errorMessage = 'ID는 3~20자의 영문자과 숫자여야 합니다.';
-		    }
-		    if(!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&])[A-Za-z\d!@#$%^&]{10,30}$/.test(password)) {
-		      errorMessage = '비밀번호는 10~30자의 대소문자, 숫자, 특수문자(!@#$%^&)를 포함해야 합니다.';
-		    }
-		    if(errorMessage) {
-		      document.getElementById('errorMessage').innerText = errorMessage;
-		      $('#errorModal').modal('show');
-		      event.preventDefault();
-		      return false;
-		    }
-		    if(!/^([가-힣]{2,10}|[A-Za-z]{4,20})$/.test(name)) {
-		    errorMessage = '이름은 2~10자의 한글 또는 4~20자의 영어여야 합니다.';
-			}
-		    if(!/^(\d{1,3}-\d{1,4}-\d{4})$/.test(phoneNumber) && !/^(\d{10,11})$/.test(phoneNumber)) {
-		    errorMessage = '전화번호는 "-"를 포함하여 12~13자리 또는 "-"를 제외한 10~11자리여야 합니다.';
-	    	}
-		    if(address.length < 5 || address.length > 100) {
-		    errorMessage = '주소는 5~100자 사이여야 합니다.';
-		    }
-		    if(!/^.+@(?:.+\.com|.+\.org|.+\.co\.kr|.+\.net)$/.test(email)) {
-		    errorMessage = '이메일은 "@"를 포함해야 하며, .com, .org, .co.kr, .net 으로 종료되어야 합니다.. ';
-		    }
-		    if(gitAddress && !gitAddress.startsWith('https://github.com/')) {
-		    document.forms["registrationForm"]["gitAddress"].value = 'https://github.com/' + gitAddress;
-		    }
-		    if(errorMessage) {
-		    document.getElementById('errorMessage').innerText = errorMessage;
-		    $('#errorModal').modal('show');
-		    event.preventDefault();
-		    return false;
-		    }
-	        return true;
-			});
-	</script>
-      <script>
-        $("#datePicker").datepicker({
-          format: "yyyy-mm-dd",
-          //   startDate: "-1d",
-          endDate: "1d",
-          autoclose: true,
-          clearBtn: true,
-          title: "Birth day",
-          language: "ko",
-          //   multidate: true,
-        });
-      </script>
+      <script src="/scripts/user/index.js"></script>
+      <script src="/scripts/user/regist.js"></script>
     </div>
   </body>
 </html>

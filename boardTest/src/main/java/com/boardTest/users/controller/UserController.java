@@ -7,12 +7,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import com.boardTest.users.domain.User;
 import com.boardTest.users.service.UserService;
 import jakarta.servlet.http.HttpSession;
 
 @Controller
+@RequestMapping("/user")
 public class UserController {
   @Autowired
   UserService userService;
@@ -29,14 +31,15 @@ public class UserController {
 
   @PostMapping("regist")
   public String registPost(@RequestParam Map<String, String> map, Model model) {
+    System.out.println("요청 받음");
     try {
       User tempUser = new User(map.get("userId"), map.get("password"), map.get("name"),
           map.get("phone"), map.get("email"));
       if (map.get("address") != "") {
         tempUser.setAddress(map.get("address"));
       }
-      if (map.get("gitAddress") != "") {
-        tempUser.setGitAddress(map.get("gitAddress"));
+      if (map.get("git-address") != "") {
+        tempUser.setGitAddress(map.get("git-address"));
       }
       if (map.get("gender") != null) {
         tempUser.setGender(Integer.parseInt(map.get("gender")));
@@ -68,6 +71,7 @@ public class UserController {
 
     if (tempUser != null) {
       session.setAttribute("userName", tempUser.getName());
+      session.setAttribute("userId", tempUser.getId());
     }
     return "redirect:/";
   }
@@ -75,6 +79,7 @@ public class UserController {
   @GetMapping("logout")
   public String logout(HttpSession session) {
     session.removeAttribute("userName");
+    session.removeAttribute("userId");
     return "redirect:/";
   }
 }

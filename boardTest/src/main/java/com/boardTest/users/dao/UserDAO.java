@@ -45,5 +45,4 @@ public class UserDAO {
   public User get(String userId) {
     return jdbcTemplate.queryForObject("select * from users where \"user_id\"=?", mapper, userId);
   }
-
 }

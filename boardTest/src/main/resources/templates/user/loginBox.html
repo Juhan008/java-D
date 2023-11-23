@@ -3,11 +3,13 @@
     <div th:fragment="loginFragment">
       <div th:if="${session.userName != null}">
         [[${session.userName}]], 어서오세요
-        <a href="/user/logout" >
-        <button class="btn btn-danger btn-sm">Log Out</button></a>
+        <a href="/user/logout"
+          ><button class="btn btn-danger btn-sm">Log Out</button></a
+        >
       </div>
       <form
         th:if="${session.userName == null}"
+        id="login-form"
         action="/user/login"
         method="post"
         class="d-flex align-items-center mb-0"
@@ -35,6 +37,8 @@
           </button></a
         >
       </form>
+      <script src="/scripts/user/index.js"></script>
+      <script src="/scripts/user/login.js"></script>
     </div>
   </body>
 </html>
